@@ -1,12 +1,9 @@
-That's a fantastic project\! I'll generate a comprehensive README.md file that you can use for your project's documentation. It will describe the application, its features, how to set it up and run it, and all the API endpoints with examples.
 
------
-
-### **Learning Navigator: LMS Exam Enrollment Service** 📚🎓
+## **Learning Navigator: LMS Exam Enrollment Service** 📚🎓
 
 This project is a RESTful API service built with **Spring Boot** to manage the exam enrollment process within a simplified Learning Management System (LMS). It provides a robust backend for handling students, subjects, and exams, demonstrating a solid understanding of layered architecture, database management with **MySQL**, and best practices for developing a production-ready API.
 
-### **Features** ✨
+## **Features** ✨
 
   * **Comprehensive CRUD Operations**: Full Create, Read, Update, and Delete functionality for Students, Subjects, and Exams.
   * **Relational Data Model**: Uses **MySQL** with **Spring Data JPA** to manage relationships between entities (Students, Subjects, Exams) using foreign keys.
@@ -15,7 +12,7 @@ This project is a RESTful API service built with **Spring Boot** to manage the e
   * **Unit Testing**: Includes basic unit tests using **MockMvc** and **Mockito** to ensure the core functionalities are working as expected.
   * **Easter Egg Feature**: A hidden endpoint that provides a random fact about a number by integrating with the **Numbers API**.
 
-### **Technologies Used** 💻
+## **Technologies Used** 💻
 
   * **Spring Boot**: The core framework for building the API.
   * **Spring Data JPA**: For database interactions and object-relational mapping.
@@ -25,15 +22,15 @@ This project is a RESTful API service built with **Spring Boot** to manage the e
   * **JUnit 5, Mockito, MockMvc**: For writing and running unit tests.
   * **Numbers API**: Used for the hidden "Easter Egg" feature.
 
-### **Getting Started** 🚀
+## **Getting Started** 🚀
 
-#### **Prerequisites**
+### **Prerequisites**
 
   * **Java Development Kit (JDK) 17 or higher**
   * **MySQL Database**
   * **Maven**
 
-#### **1. Database Setup**
+### **1. Database Setup**
 
 1.  Ensure you have a running MySQL instance.
 2.  Create a new database for the application. You can name it `lms_db`.
@@ -46,7 +43,7 @@ This project is a RESTful API service built with **Spring Boot** to manage the e
     spring.jpa.show-sql=true
     ```
 
-#### **2. Running the Application**
+### **2. Running the Application**
 
 1.  Clone this repository to your local machine.
 2.  Navigate to the project's root directory.
@@ -61,11 +58,11 @@ This project is a RESTful API service built with **Spring Boot** to manage the e
 
 The application will start on `http://localhost:8081`.
 
-### **API Endpoints** 🎯
+## **API Endpoints** 🎯
 
 The API base URL is `http://localhost:8081`.
 
-#### **Student Endpoints**
+### **Student Endpoints**
 
   * **`POST /students`**
 
@@ -83,7 +80,7 @@ The API base URL is `http://localhost:8081`.
       * **Description**: Retrieves a list of all students.
       * **Response Code**: `200 OK`
 
-#### **Subject Endpoints**
+### **Subject Endpoints**
 
   * **`POST /subjects`**
 
@@ -101,7 +98,7 @@ The API base URL is `http://localhost:8081`.
       * **Description**: Retrieves a list of all subjects.
       * **Response Code**: `200 OK`
 
-#### **Exam Endpoints**
+### **Exam Endpoints**
 
   * **`POST /exams/subjects/{subjectId}`**
 
@@ -118,7 +115,7 @@ The API base URL is `http://localhost:8081`.
       * **Description**: Retrieves a list of all exams.
       * **Response Code**: `200 OK`
 
-#### **Enrollment Endpoints**
+### **Enrollment Endpoints**
 
   * **`POST /students/{studentId}/subjects/{subjectId}`**
 
@@ -130,7 +127,7 @@ The API base URL is `http://localhost:8081`.
       * **Description**: Registers a student for an exam. This requires the student to be enrolled in the corresponding subject first.
       * **Response Code**: `200 OK`
 
-#### **Easter Egg Feature** 🥚
+### **Easter Egg Feature** 🥚
 
   * **`GET /easter-egg/hidden-feature/{number}`**
       * **Description**: Unlocks a hidden feature that returns a random fact about the provided number.
@@ -146,6 +143,3 @@ The API base URL is `http://localhost:8081`.
 
 
 
-### **License** 📄
-
-This project is licensed under the MIT License - see the `LICENSE.md` file for details.
