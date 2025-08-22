@@ -1,0 +1,56 @@
+Starting a Gradle Daemon, 8 stopped Daemons could not be reused, use --status for details
+> Task :compileJava UP-TO-DATE
+> Task :processResources
+> Task :classes
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2025-08-23T02:49:44.543+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] c.c.l.LearningNavigatorApplication       : Starting LearningNavigatorApplication using Java 17.0.7 with PID 16616 (/tmp/gradle_builds/learning_navigator/learning_navigator/classes/java/main started by crio-user in /home/crio-user/workspace/sarkarabhijit10601-ME_BUILDOUT_LEARNING_NAVIGATOR)
+2025-08-23T02:49:44.550+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] c.c.l.LearningNavigatorApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-23T02:49:44.732+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-23T02:49:44.735+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-23T02:49:45.792+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-23T02:49:45.887+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces.
+2025-08-23T02:49:46.677+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-23T02:49:46.694+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-23T02:49:46.695+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-08-23T02:49:46.745+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-23T02:49:46.747+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2009 ms
+2025-08-23T02:49:46.930+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-23T02:49:47.003+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-08-23T02:49:47.041+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-23T02:49:47.351+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-23T02:49:47.398+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-23T02:49:47.821+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ebc3340
+2025-08-23T02:49:47.824+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-23T02:49:47.884+05:30  WARN 16616 --- [learning_navigator] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.42 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-08-23T02:49:47.911+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.7.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-23T02:49:49.176+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-23T02:49:49.700+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-23T02:49:50.304+05:30  WARN 16616 --- [learning_navigator] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-23T02:49:50.852+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-23T02:49:50.910+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-23T02:49:50.930+05:30  INFO 16616 --- [learning_navigator] [  restartedMain] c.c.l.LearningNavigatorApplication       : Started LearningNavigatorApplication in 7.021 seconds (process running for 7.619)
+2025-08-23T02:49:51.872+05:30  INFO 16616 --- [learning_navigator] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-23T02:49:51.873+05:30  INFO 16616 --- [learning_navigator] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-23T02:49:51.875+05:30  INFO 16616 --- [learning_navigator] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-23T02:49:52.326+05:30  WARN 16616 --- [learning_navigator] [nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.crio.learning_navigator.Exception.AlreadyEnrolledException: Student with id: 1 has already enrolled in subject]
+2025-08-23T02:49:52.419+05:30  WARN 16616 --- [learning_navigator] [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.crio.learning_navigator.Exception.AlreadyEnrolledExamException: Student with id: 1 has already enrolled for this particular exam with id: 1]
+2025-08-23T02:49:52.630+05:30  WARN 16616 --- [learning_navigator] [nio-8081-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
