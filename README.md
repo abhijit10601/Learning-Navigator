@@ -28,12 +28,12 @@ This project is a RESTful API service built with **Spring Boot** to manage the e
 
   * **Java Development Kit (JDK) 17 or higher**
   * **MySQL Database**
-  * **Maven**
+  * **Gradle**
 
-### **1. Database Setup**
+## **1. Database Setup**
 
 1.  Ensure you have a running MySQL instance.
-2.  Create a new database for the application. You can name it `lms_db`.
+2.  Create a new database for the application, for example, `lms_db`.
 3.  Update the `src/main/resources/application.properties` file with your MySQL credentials:
     ```properties
     spring.datasource.url=jdbc:mysql://localhost:3306/lms_db
@@ -43,20 +43,30 @@ This project is a RESTful API service built with **Spring Boot** to manage the e
     spring.jpa.show-sql=true
     ```
 
-### **2. Running the Application**
+## **2. Running the Application**
 
 1.  Clone this repository to your local machine.
 2.  Navigate to the project's root directory.
-3.  Build the project using Maven:
+3.  Use the Gradle Wrapper (`./gradlew`) to build the project and run tests:
     ```bash
-    mvn clean install
+    ./gradlew build
     ```
-4.  Run the application from the command line:
+4.  Run the application using the Spring Boot Gradle plugin:
     ```bash
-    mvn spring-boot:run
+    ./gradlew bootRun
     ```
 
 The application will start on `http://localhost:8081`.
+
+-----
+
+### **Testing** 🧪
+
+You can run all the tests using the Gradle command:
+
+```bash
+./gradlew test
+```
 
 ## **API Endpoints** 🎯
 
